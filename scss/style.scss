@@ -611,7 +611,9 @@ margin-top: -5px;
       margin: auto;
       margin-top: 7px;
     }
-    
+    .phone-number{
+      color: lighten($dark-color, 35%);
+    }
   
   }
 }
@@ -630,7 +632,7 @@ margin-top: -5px;
 // ********************* MEDIA QUERY LARGE SCREENS ******************************************
 
 
-@media (min-width: 1024px) {
+@media (min-width: 765px) {
 
 
   #main-nav .navbar {
@@ -640,7 +642,6 @@ margin-top: -5px;
     padding: 0.4rem 10.4rem;
 
   }
-
 
   #tab-1-content .tab-1-content-inner{
 
@@ -675,9 +676,6 @@ margin-top: -5px;
 
   }
     
-
-
-
   #tab-2-content .tab-2-content-inner{
 
     display: grid;
@@ -707,16 +705,12 @@ margin-top: -5px;
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     grid-gap: 2rem;
-
-           
+  
      .section-title{
         grid-column-start: 1; 
         grid-column-end: 4; 
         margin-bottom: -1rem;
     }
-
-
-    
   }
 
   #tab-4-content .tab-4-content-inner{
@@ -725,5 +719,53 @@ margin-top: -5px;
     padding-bottom: .4rem;
   }
   }
+
+.hide-on-med-and-up{
+  display: none;
+}
+
+
+
+#footer{
+  height: 40vh;
+  background: linear-gradient( to bottom, $primary-darker,$primary-darker,$primary-darker, $dark-color);
+  border: none;
+  color: white;
+  border-bottom: 30px solid $primary-color;
+  margin-top: -5px;
+  
+  .container{
+    margin: auto;
+    padding: 0;
+    height: 40vh;
+  
+    .outro-text{
+      position: relative;
+      height: 100vh;
+      top: 50%;
+      transform: translateY(-10%);
+      text-align: center;
+      width: 100%;
+      margin: auto;
+  
+      h5{
+        display: block;
+      }
+  
+      .divider{
+        width: 140px;
+        border-top: 5px solid $primary-color;
+        margin: auto;
+        margin-top: 7px;
+      }
+    }
+  }
+  }
+
+
+
+
+
+
 
 }

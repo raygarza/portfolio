@@ -1,7 +1,7 @@
 // Container
 
 .container {
-  max-width: $max-width;
+  max-width: 70%;
   margin: auto;
   overflow: hidden;
   padding: 0 1rem;
@@ -127,7 +127,11 @@
 //
 
 @media (max-width: 1024px) {
-  // Text Styles
+
+.container {
+  max-width: $max-width;
+
+}  // Text Styles
   .x-large {
     font-size: 2.6rem;
     line-height: 1.2;
